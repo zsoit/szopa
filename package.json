@@ -7,7 +7,7 @@
     "scripts": {
         "dev": "rm -rf dist/*  && parcel src/index.pug",
         "github": "git add . && git commit -m 'update' && git push",
-        "b": "rm -rf public_html/*   && parcel build src/index.pug --dist-dir public_html"
+        "b": "rm -rf docs/*   && parcel build src/index.pug --dist-dir docs"
 
     },
     "devDependencies": {
