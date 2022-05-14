@@ -1,26 +1,19 @@
 nav
   .navbar
-    .logo
-      a(href='#') #Szopa2022
+    .logo.logo_name
+      a(href='#')= WEBSITE_TITLE
     ul.menu
-      li
-        a(href='#strona-glowna') Strona Główna
-      li(class="active")
-        a(href='#o-mnie') O mnie
-      li(class="active")
-        a(href='#doswiadczenie') Doświadczenie
-      li(class="active")
-        a(href='#program') Program
-      li
-        a(href='#kontakt') Kontakt
+      each item in MENU__NAV
+         li
+          a(href=item.hash)= item.name
       .cancel-btn
         i.fas.fa-times
     .media-icons
-      a(href='#')
+      a(href=FACEBOOK__URL)
         i.fab.fa-facebook-f
       a(href='#')
         i.fab.fa-twitter
       a(href='#')
         i.fab.fa-instagram
-  .menu-btn
-    i.fas.fa-bars
+    .menu-btn
+      i.fas.fa-bars

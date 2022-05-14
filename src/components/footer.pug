@@ -2,10 +2,9 @@ footer
   .content
     .top
       .logo-details
-        i.fab.fa-slack
-        span.logo_name  Szopa2022
+        span.logo_name=  WEBSITE_TITLE
       .media-icons
-        a(href='#')
+        a(href=FACEBOOK__URL target='_blank')
           i.fab.fa-facebook-f
         a(href='#')
           i.fab.fa-twitter
@@ -48,8 +47,4 @@ footer
 
   .bottom-details
     .bottom_text
-      span.copyright_text
-        | Copyright &copy; 2022 -
-        a(href='#') Aleksander Szopa
-        | - All rights reserved
-        | - www.szopa2022.pl
+      span.copyright_text= FOOTER__INFO
