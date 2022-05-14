@@ -5,9 +5,9 @@
         "pug": "^3.0.2"
     },
     "scripts": {
-        "dev": "rm -rf dist/*  && parcel src/index.pug",
+        "dev": "rm -rf dist/*  && parcel src/index.pug src/404.pug",
         "github": "git add . && git commit -m 'update' && git push",
-        "b": "rm -rf docs/*   && parcel build src/index.pug --dist-dir docs"
+        "b": "rm -rf docs/*   && parcel build src/index.pug src/404.pug --dist-dir docs && cp -R src/.htaccess docs/.htaccess"
 
     },
     "devDependencies": {

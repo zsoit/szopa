@@ -1,12 +1,11 @@
 doctype html
 html(lang='pl')
   meta(charset='UTF-8')
-  title #Szopa2022
+  title #Szopa2022 - 404
   link(rel='icon' href='images/icon.ico')
   style
     include css/main.css
     include css/footer.css
-    include css/animation.css
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   meta(name='description' content='Aleksander Szopa, kandydat na burmistrza Miastka w wyborach 2022.')
@@ -16,8 +15,20 @@ html(lang='pl')
     a(href='#strona-glowna')
         i.fas.fa-arrow-up
 
-include components/nav.pug
-include components/section.pug
-include components/footer.pug
+
+section#strona-glowna.home
+  .home-content
+    .text
+      .text-one Błąd
+      .text-two 404
+      .text-three nie znaleziono strony
+    .button
+     a(href='/' style='')
+      button Wróć do strony głównej
+    br
+    span
+      img(src='./images/gryf.png' width='100px' alt='gryf miastecki')
+    .text-one www.szopa2022.pl
+
 script
   include script.js
