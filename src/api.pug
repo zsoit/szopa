@@ -13,7 +13,7 @@
 
 
 
-    var O_MNIE__header = `Aleksander Szopa`
+    var O_MNIE__header = BOSS__NAME
     var O_MNIE__desc =
     `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, porro veritatis pariatur, nobis voluptatem ipsum repellat nemo quisquam error reprehenderit recusandae odio vel, suscipit. Voluptas mollitia accusantium quaerat aspernatur labore dolorum placeat ipsa sint nam perspiciatis eos consectetur veritatis debitis, quis aliquam unde sed maiores sit! Hic molestiae optio iste iure earum amet nostrum quaerat facere quae veniam maiores harum iusto aperiam vel inventore illo voluptatibus voluptates quo impedit voluptatum error vitae, omnis praesentium? Aperiam nulla non, nesciunt fuga rem perferendis alias et, temporibus, distinctio culpa unde a laborum libero ducimus. Facilis veniam sit praesentium, voluptatibus sint maxime iusto eaque.
     `
@@ -25,6 +25,16 @@
 
     var PROGRAM =
     [
+        {
+            header: "Pomoc rolnikom",
+            desc: "Mam świadomość, że czego innego oczekują od władz gminy młodzi ludzi, a czego innego seniorzy. Chcę o tym rozmawiać, zaprosić do dyskusji i rzeczywistego współrządzenia",
+            icon: 'fas fa-chart-line'
+        },
+        {
+            header: "Pomoc rolnikom",
+            desc: "Mam świadomość, że czego innego oczekują od władz gminy młodzi ludzi, a czego innego seniorzy. Chcę o tym rozmawiać, zaprosić do dyskusji i rzeczywistego współrządzenia",
+            icon: 'fas fa-chart-line'
+        },
         {
             header: "Pomoc rolnikom",
             desc: "Mam świadomość, że czego innego oczekują od władz gminy młodzi ludzi, a czego innego seniorzy. Chcę o tym rozmawiać, zaprosić do dyskusji i rzeczywistego współrządzenia",
@@ -109,4 +119,20 @@
         }
 
 
+    ];
+    var PYTANIA__header = "Pytania i odpowiedzi"
+    var PYTANIA =
+    [
+        {
+            ask: "Czy aplikacja e-mikrofirma pozwala na wystawienie faktury w systemie samofakturowania, gdy fakturę VAT wystawia nabywca?",
+            answear: "Nie .Wystawiane przez użytkownika w aplikacji faktury VAT są automatycznie przenoszone do rejestru sprzedaży, wobec czego nie ma możliwości wystawiania faktur jako nabywca na zasadzie samofakturowania z uwagi na specyficzny tryb ich ewidencjonowania."
+        },
+        {
+            ask: "Czy aplikacja e-mikrofirma pozwala na wystawienie faktury VAT-RR przy transakcjach z rolnikiem ryczałtowym, kiedy wystawcą faktury jest jej nabywca?",
+            answear: "Nie. Wystawiane przez użytkownika w aplikacji faktury VAT są automatycznie przenoszone do rejestru sprzedaży, wobec czego nie ma możliwości wystawiania faktur VAT-RR przez nabywcę płodów rolnych na rzecz rolnika ryczałtowego, z uwagi na specyficzny tryb ich ewidencjonowania, która dostępna jest ze strony głównej NOWY ZAKUP a następnie ZBIORCZY WPIS DO REJESTRU VAT. W tym celu należy wprowadzić w aplikacji wartości z podsumowania tej faktury."
+        },
+        {
+            ask: "Czy i w jaki sposób mogę zrobić w aplikacji e-mikrofirma kopię zapasową danych (backup)?",
+            answear: "Aplikacja umożliwia tworzenie kopii bezpieczeństwa oraz odtwarzania danych z zapisanej kopii bezpieczeństwa, służą do tego dwa przyciski umieszczone na ekranie Ustawienia: wykonaj kopię zapasową oraz wczytaj kopię zapasową.Użytkownik może również wykonać „ręczny backup” poprzez kopię plików baz danych. W tym celu należy skopiować pliki baz danych (profiles.db oraz nip_użytkownika.db) z lokalizacji C:\Users\XXXX\AKMF, (gdzie XXXX to nazwa użytkownika aktualnie zalogowanego do komputera i pracującego w aplikacji). W przypadku natomiast zmiany katalogu roboczego na inny (na ekranie USTAWIENIA), do którego są zapisywane pozostałe wytworzone przez aplikację dokumenty, między innymi informacje JPK_VAT, JPK_FA należy również skopiować ten folder w celu uzyskania kopii zapasowej w tym zakresie."
+        }
     ];

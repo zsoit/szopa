@@ -1,0 +1,12 @@
+section#pytania.contact(style='background-color: #f0f8ff;')
+    .title
+        span= PYTANIA__header
+    .container
+        .accordion
+            each item in PYTANIA
+                    .accordion-item
+                    button#accordion-button-1(aria-expanded='false')
+                        span.accordion-title= item.ask
+                        span.icon(aria-hidden='true')
+                    .accordion-content
+                        p= item.answear
