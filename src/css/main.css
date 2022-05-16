@@ -86,7 +86,7 @@ nav .navbar .menu li {
 }
 
 .navbar .menu a {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: #0E2431;
     padding: 6px 0;
@@ -144,6 +144,31 @@ nav.sticky .menu-btn {
 
 
 /* home section styling */
+
+.end {
+    height: 30vh;
+    width: 100%;
+    background: url("./images/end.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.end-header {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.end-p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    /* margin: 20px; */
+    /* padding: 20px; */
+}
 
 .home {
     height: 100vh;
@@ -238,6 +263,7 @@ section .title {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 section .title span {
@@ -316,6 +342,10 @@ section .button button:hover {
     color: #4070f4;
 }
 
+.center {
+    text-align: center;
+}
+
 
 /* My Skills CSS */
 
@@ -379,7 +409,7 @@ section .button button:hover {
 }
 
 .skills-details .boxes .per {
-    font-size: 60px;
+    font-size: 50px;
     color: #4070f4;
 }
 
@@ -435,28 +465,6 @@ section .button button:hover {
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p {
     color: #fff;
-}
-
-
-/* Contact Me CSS */
-
-.contact {
-    background: #fff;
-}
-
-.contact .content {
-    margin: 0 auto;
-    padding: 30px 0;
-}
-
-.contact .text {
-    width: 80%;
-    text-align: center;
-    margin: auto;
-}
-
-.content__box {
-    text-align: center;
 }
 
 
@@ -571,189 +579,4 @@ section .button button:hover {
         font-size: 50px;
         color: #4070f4;
     }
-}
-
-.container-komitet {
-    /* max-width: 1200px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-
-.container-komitet .box {
-    width: calc(33% - 10px);
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 30px;
-    border-radius: 5px;
-}
-
-.box .quote i {
-    margin-top: 10px;
-    font-size: 45px;
-    color: #17c0eb
-}
-
-.container-komitet .box .image {
-    margin: 10px 0;
-    height: 150px;
-    width: 150px;
-    background: #8e44ad;
-    padding: 3px;
-    border-radius: 50%;
-}
-
-.box .image img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #fff;
-}
-
-.box p {
-    text-align: justify;
-    margin-top: 8px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.box .name_job {
-    margin: 10px 0 3px 0;
-    color: #8e44ad;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.rating i {
-    font-size: 18px;
-    color: #8e44ad;
-    margin-bottom: 5px;
-}
-
-@media (max-width:1045px) {
-    .container-komitet .box {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width:710px) {
-    .container-komitet .box {
-        width: 100%;
-    }
-}
-
-#pytania .container {
-    margin: 0 auto;
-    padding: 4rem;
-    width: 48rem;
-    /* display: flex;
-    justify-content: center; */
-}
-
-.accordion .accordion-item {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.accordion .accordion-item button[aria-expanded='true'] {
-    border-bottom: 1px solid #03b5d2;
-}
-
-.accordion button {
-    position: relative;
-    display: block;
-    text-align: left;
-    width: 100%;
-    padding: 1em 0;
-    color: #7288a2;
-    font-size: 1.15rem;
-    font-weight: 400;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.accordion button:hover,
-.accordion button:focus {
-    cursor: pointer;
-    color: #03b5d2;
-}
-
-.accordion button:hover::after,
-.accordion button:focus::after {
-    cursor: pointer;
-    color: #03b5d2;
-    border: 1px solid #03b5d2;
-}
-
-.accordion button .accordion-title {
-    padding: 1em 1.5em 1em 0;
-}
-
-.accordion button .icon {
-    display: inline-block;
-    position: absolute;
-    top: 18px;
-    right: 0;
-    width: 22px;
-    height: 22px;
-    border: 1px solid;
-    border-radius: 22px;
-}
-
-.accordion button .icon::before {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 9px;
-    left: 5px;
-    width: 10px;
-    height: 2px;
-    background: currentColor;
-}
-
-.accordion button .icon::after {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 5px;
-    left: 9px;
-    width: 2px;
-    height: 10px;
-    background: currentColor;
-}
-
-.accordion button[aria-expanded='true'] {
-    color: #03b5d2;
-}
-
-.accordion button[aria-expanded='true'] .icon::after {
-    width: 0;
-}
-
-.accordion button[aria-expanded='true']+.accordion-content {
-    opacity: 1;
-    max-height: 9em;
-    transition: all 200ms linear;
-    will-change: opacity, max-height;
-}
-
-.accordion .accordion-content {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear;
-    will-change: opacity, max-height;
-}
-
-.accordion .accordion-content p {
-    font-size: 1rem;
-    font-weight: 300;
-    margin: 2em 0;
 }
