@@ -1,6 +1,6 @@
 # PUG WEBSITE
 
-## 1. Windows dependence
+## 1. FTP AUTO-SCRIPT
 - WinScp and PATH
 ```
 C:\Program Files (x86)\WinSCP
