@@ -2,23 +2,13 @@ include api.pug
 doctype html
 html(lang='pl-PL')
   head
-    meta(charset='UTF-8')
-    title= 404
-    link(rel='icon' href='images/icon.jpg')
-    style
-      include css/main.css
-      include css/footer.css
-    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    meta(name='description' content='Aleksander Szopa, kandydat na burmistrza Miastka w wyborach 2022.')
-    meta(name='author' content='Aleksanser Szopa')
-    meta(name='keywords' content='Burmistrz, Miastko, Burmistrz Miastka, Wybory Miastko, #Szopa2022, Szopa, Aleksanser Szopa')
+      include components/Head.pug
   body
     section#strona-glowna.home
       .home-content
         .text
           .text-one Błąd
-          .text-two 404
+          .text-two.focus-in-expand 404
           .text-three nie znaleziono strony
         .button
           a(href='/' style='')
@@ -26,6 +16,3 @@ html(lang='pl-PL')
         br
         span
         .text-one= WEBSITE_URL
-
-    script
-      include script.js

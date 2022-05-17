@@ -2,25 +2,46 @@ include api.pug
 doctype html
 html(lang='pl-PL')
   head
-    meta(charset='UTF-8')
-    title= WEBSITE_TITLE
-    link(rel='icon' href='images/icon.jpg')
-    style
-      include css/main.css
-      include css/faq.css
-      include css/employees.css
-      include css/contact.css
-      include css/footer.css
-      include css/animation.css
-    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    meta(name='description' content='Aleksander Szopa, kandydat na burmistrza Miastka w wyborach 2022.')
-    meta(name='author' content='Aleksanser Szopa')
-    meta(name='keywords' content='Burmistrz, Miastko, Burmistrz Miastka, Wybory Miastko, #Szopa2022, Szopa, Aleksanser Szopa')
-
+    include components/Head.pug
   body
-    include components/nav.pug
-    include components/section.pug
-    include components/footer.pug
+
+    block NAV
+      include components/Nav/Nav.pug
+
+    block HOME
+        include components/Home/Home.pug
+
+    block ABOUT-ME
+      section#o-mnie.about
+        include components/About/About.pug
+
+    block SKILLS
+      section#doswiadczenie.skills
+        include components/Skills/Skills.pug
+
+    block SERVICES
+      section#program.services
+        include components/Services/Services.pug
+
+    block TEAM
+      include components/Team/Team.pug
+
+    block FAQ
+      include components/Faq/Faq.pug
+
+    block CONTACT
+      section#kontakt.contact
+        include components/Contact/Contact.pug
+
+    block END
+      section#end
+        .end
+          .end-header Zobaczysz efekty!
+          .end-p Łączy Nas Miastko
+
+    block FOOTER
+      include components/Footer/Footer.pug
+
     script
-      include script.js
+      include components/Nav/Nav.js
+      include components/Faq/Faq.js

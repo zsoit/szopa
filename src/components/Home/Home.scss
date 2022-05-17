@@ -1,0 +1,131 @@
+/* home section styling */
+
+.end {
+    height: 30vh;
+    width: 100%;
+    background: url("../images/end.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.end-header {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.end-p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    /* margin: 20px; */
+    /* padding: 20px; */
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url("../images/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    .home-content {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text-one {
+        font-size: 25px;
+        color: #0E2431;
+    }
+    .text-two {
+        color: #0E2431;
+        font-size: 75px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .text-three {
+        font-size: 40px;
+        margin: 5px 0;
+        color: #4070f4;
+    }
+    .text-four {
+        font-size: 23px;
+        margin: 5px 0;
+        color: #0E2431;
+    }
+    .button {
+        margin: 14px 0;
+        button {
+            outline: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 25px;
+            font-weight: 400;
+            background: #4070f4;
+            color: #fff;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.4s ease;
+            &:hover {
+                border-color: #4070f4;
+                background-color: #fff;
+                color: #4070f4;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .home {
+        .text-two {
+            font-size: 55px;
+        }
+        .text-three {
+            font-size: 39px;
+        }
+        .text-one {
+            font-size: 25px;
+        }
+    }
+    .skills-details .boxes .per {
+        font-size: 50px;
+        color: #4070f4;
+    }
+}
+
+@media (max-width: 350px) {
+    .home {
+        .text-two {
+            font-size: 35px;
+        }
+        .text-three {
+            font-size: 20px;
+        }
+        .text-one {
+            font-size: 15px;
+        }
+    }
+    .skills-details .boxes .per {
+        font-size: 50px;
+        color: #4070f4;
+    }
+}
+
+// @media (max-width: 1050px) {
+//     .home {
+//         .text-two {
+//             font-size: 65px;
+//         }
+//         .text-three {
+//             font-size: 35px;
+//         }
+//     }
+// }

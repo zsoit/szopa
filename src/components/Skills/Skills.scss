@@ -1,0 +1,84 @@
+/* My Skills CSS */
+
+.skills {
+    background: #F0F8FF;
+    .content {
+        padding: 40px 0;
+    }
+    .skills-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.skills-details {
+    .text {
+        width: 50%;
+    }
+    p {
+        color: #0E2431;
+        text-align: justify;
+    }
+}
+
+.skills .skills-details .experience {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.skills-details {
+    .experience {
+        .num {
+            color: #0E2431;
+            font-size: 80px;
+        }
+        .exp {
+            color: #0E2431;
+            margin-left: 20px;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 6px;
+        }
+    }
+    .boxes {
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .box {
+        width: calc(100% / 2 - 20px);
+        margin: 20px 0;
+    }
+    .boxes {
+        .topic {
+            font-size: 20px;
+            color: #4070f4;
+        }
+        .per {
+            font-size: 50px;
+            color: #4070f4;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .skills .skills-details {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .skills-details {
+        .text {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .boxes {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}
