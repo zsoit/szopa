@@ -24,10 +24,12 @@ html(lang='pl-PL')
         include components/Services/Services.pug
 
     block TEAM
-      include components/Team/Team.pug
+      section#komitet
+        include components/Team/Team.pug
 
     block FAQ
-      include components/Faq/Faq.pug
+      section#pytania.contact(style='background-color: #f0f8ff;')
+        include components/Faq/Faq.pug
 
     block CONTACT
       section#kontakt.contact

@@ -1,17 +1,16 @@
-section#komitet
-  .content
-    .title
-      span Komitet
-  .container-komitet
-    each person in KOMITET
-      .box#01-jan-kowalski
-        .image
-              img(src=person.avatar)
-        .name_job= person.name
-        .rating
-          i.fas.fa-star
-          i.fas.fa-star
-          i.fas.fa-star
-          i.fas.fa-star
-          i.fas.fa-star
-        p= person.info
+.content
+  .title
+    span Komitet
+.container-komitet
+  each person in KOMITET
+    .box#01-jan-kowalski
+      .image
+            img(src=person.avatar)
+      .name_job= person.name
+      .rating
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+      p= person.info
