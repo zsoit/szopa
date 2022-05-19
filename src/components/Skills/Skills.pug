@@ -6,18 +6,14 @@
       .topic= DOSWIADCZENIE__header
       p= DOSWIADCZENIE__desc
       .experience
-        .num 25
+        .num= DOSWIADCZENIE__exp
         .exp
           | Lat
           br
           |  Doświadczenia
     .boxes
-      .box
-        .topic Prezes
-        .per MTG
-      .box
-        .topic Radny gminy
-        .per Miastko
-      .box
-        .topic Prezes firmy
-        .per Miralex
+      each item in DOSWIADCZENIE__headers
+        .box
+          .topic= item.topic
+          .per= item.per
+

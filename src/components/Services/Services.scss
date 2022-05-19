@@ -6,7 +6,7 @@
     justify-content: space-between;
     .box {
         margin: 20px 0;
-        width: calc(100% / 3 - 20px);
+        width: calc(100% / 4 - 20px);
         text-align: center;
         border-radius: 12px;
         padding: 30px 10px;
@@ -56,5 +56,40 @@
     }
     .box {
         flex: 100%;
+    }
+}
+
+.info__item {
+    flex: 50%;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        object-fit: cover;
+        border-radius: 12px;
+        width: 400px;
+    }
+    .left {
+        p {
+            text-align: justify;
+        }
+    }
+    .right {
+        padding: 0 70px;
+    }
+    .topic {
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .info img {
+        height: 300px;
+        width: 300px;
+    }
+    .right {
+        padding: 0 !important;
     }
 }

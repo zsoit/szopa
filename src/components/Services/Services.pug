@@ -2,6 +2,14 @@
   .title
     span Program
   .boxes
+    .text.info
+      .left.info__item
+        p= PROGRAM__desc
+        br
+      .right.info__item
+        img(src="https://d-art.ppstatic.pl/kadry/k/r/1/49/cf/6266faf4118f4_o_large.jpg")
+      .topic= PROGRAM__header
+  .boxes
     each item in PROGRAM
       .box
         .icon
