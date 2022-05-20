@@ -21,7 +21,7 @@
     var DOSWIADCZENIE__desc =
     `Chciałbym, aby w kampanii dyskutowano o przyszłości gminy, aby głosowanie nie było plebiscytem, a rzeczywistym wyborem. Jestem niezależny finansowo i naprawdę nic nie muszę. Chcę jednak, aby mieszkańcy mieli rzeczywisty wybór. Mam świadomość, że czego innego oczekują od władz gminy młodzi ludzi, a czego innego seniorzy. Chcę o tym rozmawiać, zaprosić do dyskusji i rzeczywistego współrządzenia
     `
-    var DOSWIADCZENIE__exp = `10`
+    var DOSWIADCZENIE__exp = `20`
     var DOSWIADCZENIE__headers =
     [
         {
@@ -66,7 +66,7 @@
             icon: 'fas fa-chart-line'
         },
         {
-            header: "IV. SPOŁECZNY",
+            header: "IV. SPOŁECZNYM",
             desc: `- Będę wspierał lokalną przedsiębiorczość. Rozwój przedsiębiorstw to rozwój Gminy.
             - Utworzę organ doradczy wraz z lokalnymi przedsiębiorcami.`,
             icon: 'fas fa-chart-line'
@@ -122,16 +122,16 @@
             name: "Doświadczenie"
         },
         {
+            hash: "#program" ,
+            name: "Program"
+        },
+        {
             hash: "#komitet" ,
             name: "Komitet"
         },
         {
             hash: "#pytania" ,
             name: "FAQ"
-        },
-        {
-            hash: "#program" ,
-            name: "Program"
         },
         {
             hash: "#kontakt" ,
@@ -166,5 +166,72 @@
         {
             ask: "Czy i w jaki sposób mogę zrobić w aplikacji e-mikrofirma kopię zapasową danych (backup)?",
             answear: "Aplikacja umożliwia tworzenie kopii bezpieczeństwa oraz odtwarzania danych z zapisanej kopii bezpieczeństwa, służą do tego dwa przyciski umieszczone na ekranie Ustawienia: wykonaj kopię zapasową oraz wczytaj kopię zapasową.Użytkownik może również wykonać „ręczny backup” poprzez kopię plików baz danych. W tym celu należy skopiować pliki baz danych (profiles.db oraz nip_użytkownika.db) z lokalizacji C:\Users\XXXX\AKMF, (gdzie XXXX to nazwa użytkownika aktualnie zalogowanego do komputera i pracującego w aplikacji). W przypadku natomiast zmiany katalogu roboczego na inny (na ekranie USTAWIENIA), do którego są zapisywane pozostałe wytworzone przez aplikację dokumenty, między innymi informacje JPK_VAT, JPK_FA należy również skopiować ten folder w celu uzyskania kopii zapasowej w tym zakresie."
+        }
+    ];
+    var FOOTER__LINK__BOX =
+    [
+        {
+            link_header: "Komitet wyborczy",
+            link_element:
+            [
+                {
+                    name: "Okręg",
+                    url: "#"
+
+                },
+                {
+                    name: "Postulaty",
+                    url: "#"
+                },
+                {
+                    name: "Spotkania",
+                    url: "#"
+                }
+
+            ]
+        },
+        {
+            link_header: "Informacje",
+            link_element:
+            [
+                {
+                    name: BOSS__NAME,
+                    url: "#"
+
+                },
+                {
+                    name: "Radny gminy Miastko",
+                    url: "https://bip.miastko.pl/dokumenty/8603"
+                }
+
+            ]
+        },
+        {
+            link_header: "Przydatne linki",
+            link_element:
+            [
+                {
+                    name: "miastko.pl",
+                    url: "http://www.miastko.pl"
+                },
+                {
+                    name: "KWW Samorządność",
+                    url: "#"
+                }
+            ]
+        },
+        {
+            link_header: "Pobierz",
+            link_element:
+            [
+                {
+                    name: "Program (PDF)",
+                    url: "#"
+                },
+                {
+                    name: "Komitet (PDF)",
+                    url: "#"
+                }
+            ]
         }
     ];

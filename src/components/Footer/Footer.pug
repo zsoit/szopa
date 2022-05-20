@@ -13,34 +13,12 @@ footer
         a(href='#')
           i.fab.fa-youtube
     .link-boxes
-      ul.box
-        li.link_name Komitet wyborczy
-        li
-          a(href='#') Okręg
-        li
-          a(href='#') Postulaty
-        li
-          a(href='#') Spotkania
-      ul.box
-        li.link_name Informacje
-        li
-          a(href='#')= BOSS__NAME
-        li
-          a(href='https://bip.miastko.pl/dokumenty/8603' target='blank') Radny gmina miastko
-
-      ul.box
-        li.link_name Przydatne linki
-        li
-          a(href='#' target='_blank') KWW Samorządność
-        li
-          a(href='#') miastko.pl
-      ul.box
-        li.link_name Pobierz
-        li
-          a(href='#') Program (PDF)
-        li
-          a(href='#') Komitet (PDF)
-
+      each item in FOOTER__LINK__BOX
+        ul.box
+          li.link_name= item.link_header
+            each list in item.link_element
+              li
+                a(href=list.url target='_blank')= list.name
 
   .bottom-details
     .bottom_text
