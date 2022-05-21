@@ -1,0 +1,116 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    counter-reset: section;
+}
+
+#article {
+    padding: 100px 50px;
+    margin-bottom: 0;
+    // background-color: #f0f8ff;
+}
+
+.article {
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    &__header {
+        font-size: 48px;
+    }
+    &__paragraph {
+        font-size: 21px;
+    }
+    &:nth-child(odd) .article__inner {
+        grid-column: 2;
+    }
+    &:nth-child(even) .article__inner {
+        grid-column: 1;
+    }
+    &:nth-child(odd) .article__inner::before {
+        left: -20%;
+    }
+    &:nth-child(even) .article__inner::before {
+        right: -20%;
+    }
+}
+
+.article__inner {
+    position: relative;
+    &::before {
+        counter-increment: section;
+        z-index: -1;
+        font-weight: bold;
+        position: absolute;
+        top: -40%;
+        font-size: 430px;
+        content: counter(section);
+        // color: #363636;
+        color: lightgray;
+    }
+    p {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .article {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        margin-bottom: 50px;
+        &__header {
+            font-size: 38px;
+        }
+        &__paragraph {
+            font-size: 21px;
+        }
+    }
+    h2::before {
+        content: counter(section) ". ";
+        word-break: break-all;
+        color: lightgray;
+        margin-right: 10px;
+    }
+    .article__inner {
+        &::before {
+            // font-size: 330px;
+            // top: -40%;
+            // color: lightgray;
+            color: transparent;
+        }
+    }
+}
+
+.article ul li {
+    background-color: #01579b;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    &::before {
+        content: " ➤ ";
+        color: gold;
+    }
+    &:hover {
+        background-color: white;
+        color: #01579b;
+        cursor: help;
+        border: 1px solid #01579b;
+    }
+}
+
+.article__footer {
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}

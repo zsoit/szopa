@@ -6,7 +6,7 @@
     justify-content: space-between;
     .box {
         margin: 20px 0;
-        width: calc(100% / 4 - 20px);
+        width: calc(100% / 5 - 20px);
         text-align: center;
         border-radius: 12px;
         padding: 30px 10px;
@@ -70,6 +70,7 @@
         object-fit: cover;
         border-radius: 12px;
         width: 400px;
+        margin-bottom: 100px;
     }
     .left {
         p {
@@ -84,7 +85,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .info img {
         height: 300px;
         width: 300px;

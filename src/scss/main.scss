@@ -38,10 +38,10 @@ body {
 }
 
 section {
-    padding-top: 40px;
+    padding-top: 25px;
     .content {
         width: 80%;
-        margin: 40px auto;
+        margin: 20px auto;
         font-family: 'Poppins', sans-serif;
     }
 }
@@ -126,5 +126,48 @@ section .button {
 @media (max-width: 1050px) {
     .contact .text {
         width: 100%;
+    }
+}
+
+.end {
+    height: 30vh;
+    width: 100%;
+    background: url("../images/end.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.end-header {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.end-p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.program__background {
+    height: 30vh;
+    width: 100%;
+    background: url("../images/program__background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-weight: 800;
+}
+
+@media (max-width: 900px) {
+    .program__background,
+    .end {
+        height: 40vh;
+    }
+    .program__background {
+        margin-bottom: 150px;
     }
 }

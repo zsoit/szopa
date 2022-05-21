@@ -22,8 +22,11 @@ html(lang='pl-PL')
     block SERVICES
       section#program.services
         include components/Services/Services.pug
-
-
+        section#end
+        .program__background
+            .end-header Program Wyborczy
+            .end-p= PROGRAM_DESC
+        include components/Services/ServicesItem.pug
     block TEAM
       section#komitet
         include components/Team/Team.pug
