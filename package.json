@@ -5,9 +5,9 @@
         "pug": "^3.0.2"
     },
     "scripts": {
-        "dev": "rm -rf dist/*  && parcel src/index.pug src/404.pug",
+        "dev": "rm -rf dist  && parcel src/index.pug src/404.pug",
         "github": "git add . && git commit -m 'update' && git push",
-        "b": "rm -rf public_html/*   && parcel build src/index.pug src/404.pug src/scss/index.scss --dist-dir public_html && cp -R src/.htaccess public_html/.htaccess",
+        "b": "rm -rf public_html   && parcel build src/index.pug src/404.pug src/scss/index.scss --dist-dir public_html && cp -R src/.htaccess public_html/.htaccess",
         "lt": "lt --port 1234 -s myhost",
         "ftp": "cd public_html && winscp.com -script=../ftp.txt && cd .."
     },

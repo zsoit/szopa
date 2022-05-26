@@ -1,11 +1,15 @@
-#pytania .container {
+.faq {
+    background-color: #f0f8ff;
+}
+
+.faq .container {
     margin: 0 auto;
     padding: 4rem;
     width: 48rem;
 }
 
 @media only screen and (max-width: 700px) {
-    #pytania .container {
+    .faq .container {
         width: auto;
     }
 }

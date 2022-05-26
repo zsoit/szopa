@@ -1,7 +1,6 @@
 // Sticky Navigation Menu JS Code
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
-console.log(scrollBtn);
 let val;
 window.onscroll = function() {
     if (document.documentElement.scrollTop > 20) {
@@ -9,6 +8,7 @@ window.onscroll = function() {
     } else {
         nav.classList.remove("sticky");
     }
+    changeColorA();
 
 }
 
@@ -22,7 +22,7 @@ menuBtn.onclick = function() {
     menuBtn.style.opacity = "0";
     menuBtn.style.pointerEvents = "none";
     body.style.overflow = "hidden";
-    scrollBtn.style.pointerEvents = "none";
+    try { scrollBtn.style.pointerEvents = "none"; } catch { return 0; }
 }
 cancelBtn.onclick = function() {
     navBar.classList.remove("active");
@@ -39,5 +39,34 @@ for (var i = 0; i < navLinks.length; i++) {
         navBar.classList.remove("active");
         menuBtn.style.opacity = "1";
         menuBtn.style.pointerEvents = "auto";
+    });
+}
+
+
+// nav change color
+let section = document.querySelectorAll("section");
+let menu = document.querySelectorAll("nav .menu li a");
+
+function changeColorA() {
+    section.forEach((i) => {
+        let top = window.scrollY;
+        let offset = i.offsetTop - 150;
+        let height = i.offsetHeight;
+        let id = i.getAttribute("id");
+
+        try {
+            if (top >= offset && top < offset + height) {
+                menu.forEach((link) => {
+                    link.classList.remove("activeNavA");
+                    document
+                        .querySelector("nav .menu li a[href*=" + id + "]")
+                        .classList.add("activeNavA");
+                });
+            }
+        } catch {
+            return 0;
+        }
+
+
     });
 }

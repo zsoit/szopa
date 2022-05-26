@@ -6,10 +6,10 @@ html(lang='pl-PL')
   body
 
     block NAV
-      include components/Nav/Nav.pug
+        include components/Nav/Nav.pug
 
     block HOME
-        include components/Home/Home.pug
+      include components/Home/Home.pug
 
     block ABOUT-ME
       section#o-mnie.about
@@ -32,7 +32,7 @@ html(lang='pl-PL')
         include components/Team/Team.pug
 
     block FAQ
-      section#pytania.contact(style='background-color: #f0f8ff;')
+      section#pytania.faq
         include components/Faq/Faq.pug
 
     block CONTACT
@@ -51,3 +51,4 @@ html(lang='pl-PL')
     script
       include components/Nav/Nav.js
       include components/Faq/Faq.js
+      include components/Animation/Animation.js

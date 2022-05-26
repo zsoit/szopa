@@ -1,0 +1,9 @@
+$dark-theme: false !default;
+$primary-color: white !default;
+$accent-color: #171717 !default;
+@if $dark-theme {
+    $primary-color: darken($primary-color, 60%);
+    $accent-color: lighten($accent-color, 60%);
+}
+
+$COLOR_MAIN: "#4070f4";
