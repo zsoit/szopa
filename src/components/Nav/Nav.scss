@@ -43,14 +43,15 @@ nav {
     padding: 6px 0;
     transition: all 0.4s ease;
     &:hover {
-        color: white;
+        color: #4070f4;
+        background-color: white;
     }
 }
 
 nav.sticky .menu a {
     color: #FFF;
     &:hover {
-        color: white;
+        color: #4070f4;
     }
 }
 
@@ -63,6 +64,9 @@ nav.sticky .menu a {
 nav {
     &.sticky .media-icons a {
         color: #FFF;
+    }
+    &.sticky .media-icons a:hover {
+        color: gold;
     }
     .menu-btn {
         position: absolute;
@@ -103,7 +107,45 @@ nav {
     color: #fff;
 }
 
+.mobile__item {
+    display: none;
+    border-radius: 10px;
+    color: gray;
+    padding: 0 10px;
+    font-size: 18px;
+    text-align: left;
+    border: 0.5px solid gray;
+    margin-bottom: 30px;
+}
+
+.fb_mobile {
+    display: none;
+    margin-top: 12px;
+    i {
+        color: gray;
+        font-size: 22px;
+        margin: 20px;
+    }
+}
+
+nav .menu li a:hover,
+nav .menu li a.activeNavA {
+    color: #0E2431;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.5s ease-out;
+    letter-spacing: 2px;
+}
+
 @media (max-width: 1050px) {
+    .mobile__item {
+        display: block;
+    }
+    .fb_mobile {
+        display: flex;
+        flex-wrap: wrap;
+    }
     nav .navbar {
         width: 90%;
         .menu {
@@ -131,10 +173,13 @@ nav {
             margin: 10px 0;
         }
         &.sticky .menu a:hover {
-            color: white;
+            color: #0E2431;
         }
         .navbar .media-icons {
             display: none;
+        }
+        .menu a.activeNavA {
+            color: #0E2431;
         }
         .menu-btn {
             display: block;
@@ -145,12 +190,11 @@ nav {
     }
 }
 
-nav .menu li a:hover,
-nav .menu li a.activeNavA {
-    background: #00c2cb;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    transition: 0.5s ease-out;
-    letter-spacing: 2px;
+@media (max-width: 376px) {
+    .fb_mobile {
+        i {
+            margin: 10px;
+            font-size: 17px;
+        }
+    }
 }

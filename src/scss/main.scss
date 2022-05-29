@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    scroll-behavior: smooth !important;
+    // scroll-behavior: smooth !important;
     font-family: Poppins;
 }
 
@@ -51,9 +51,9 @@ section .title {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-    margin-top: 50px;
     span {
         color: #0E2431;
+        margin-top: 90px;
         font-size: 30px;
         font-weight: 600;
         position: relative;
@@ -121,6 +121,11 @@ section .button {
 @media (max-width: 1190px) {
     section .content {
         width: 85%;
+    }
+    section .title {
+        span {
+            margin-top: 30px;
+        }
     }
 }
 

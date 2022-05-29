@@ -29,7 +29,8 @@ cancelBtn.onclick = function() {
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
     body.style.overflow = "auto";
-    scrollBtn.style.pointerEvents = "auto";
+    try { scrollBtn.style.pointerEvents = "auto"; } catch { return 0; }
+
 }
 
 // Side Navigation Bar Close While We Click On Navigation Links

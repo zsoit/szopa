@@ -3,9 +3,18 @@ nav.nav
     .logo.logo_name
       a(href='#strona-glowna')= WEBSITE_TITLE
     ul.menu
+      span.mobile__item= WEBSITE_TITLE
       each item in MENU__NAV
          li
           a(href=item.hash)= item.name
+      span.fb_mobile
+        a(href=FACEBOOK__URL target="_blank")
+          i.fab.fa-facebook-f
+        a(href='#' target="_blank")
+          i.fab.fa-twitter
+        a(href='#' target="_blank")
+          i.fab.fa-instagram
+
       .cancel-btn
         i.fas.fa-times
     .media-icons
