@@ -4,17 +4,11 @@
     .container
         .accordion
             each item in PYTANIA
+                span(id=`pytanie-${item.id}` class="faq__header__fix")
                     .accordion-item
                     button#accordion-button-1(aria-expanded='false')
-                        span.accordion-title= item.ask
-                        span.icon(aria-hidden='true')
+                        a(href= `#pytanie-${item.id}`)
+                            span.accordion-title(class= `faq${item.id}` )= item.ask
+                            span.icon(aria-hidden='true')
                     .accordion-content
                         p= item.answear
-        .accordion(style='display: none;')
-            .accordion-item
-            button#accordion-button-1(aria-expanded='false')
-                span.accordion-title Pytanie
-                span.icon(aria-hidden='true')
-            .accordion-content
-                p Odpowiedz
-

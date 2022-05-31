@@ -116,29 +116,33 @@
     var PYTANIA =
     [
         {
-            ask: "Czy aplikacja e-mikrofirma pozwala na wystawienie faktury w systemie samofakturowania, gdy fakturę VAT wystawia nabywca?",
-            answear: "Nie .Wystawiane przez użytkownika w aplikacji faktury VAT są automatycznie przenoszone do rejestru sprzedaży, wobec czego nie ma możliwości wystawiania faktur jako nabywca na zasadzie samofakturowania z uwagi na specyficzny tryb ich ewidencjonowania."
+            id: "1-dlaczego-odszedl-Pan-odeszla-pani-z-poprzedniej-pracy",
+            ask: "Dlaczego odszedł Pan/odeszła Pani z poprzedniej pracy?",
+            answear: "Wymień tylko te powody, które stawiają Cię w korzystnym świetle. Nie wspominaj o tym, że zostałeś zwolniony, pokłóciłeś się, wyrzucono Cię, itp. Jeżeli jednak któryś z tych powodów zostanie ujawniony podczas rozmowy, zapewnij pracodawcę, że podobny problem na pewno nie będzie miał miejsca w pracy, o którą się starasz."
         },
         {
+            id: "2-czy-aplikacja-e-mikrofirma-pozwala-na-wystawienie",
             ask: "Czy aplikacja e-mikrofirma pozwala na wystawienie faktury VAT-RR przy transakcjach z rolnikiem ryczałtowym, kiedy wystawcą faktury jest jej nabywca?",
             answear: "Nie. Wystawiane przez użytkownika w aplikacji faktury VAT są automatycznie przenoszone do rejestru sprzedaży, wobec czego nie ma możliwości wystawiania faktur VAT-RR przez nabywcę płodów rolnych na rzecz rolnika ryczałtowego, z uwagi na specyficzny tryb ich ewidencjonowania, która dostępna jest ze strony głównej NOWY ZAKUP a następnie ZBIORCZY WPIS DO REJESTRU VAT. W tym celu należy wprowadzić w aplikacji wartości z podsumowania tej faktury.Nie. Wystawiane przez"
         },
         {
+            id: "3-czy-i-w-jaki-sposob-moge-zrobic-backup",
             ask: "Czy i w jaki sposób mogę zrobić w aplikacji e-mikrofirma kopię zapasową danych (backup)?",
             answear: "Aplikacja umożliwia tworzenie kopii bezpieczeństwa oraz odtwarzania danych z zapisanej kopii bezpieczeństwa, służą do tego dwa przyciski umieszczone na ekranie Ustawienia: wykonaj kopię zapasową oraz wczytaj kopię zapasową.Użytkownik może również wykonać „ręczny backup” poprzez kopię plików baz danych. W tym celu należy skopiować pliki baz danych (profiles.db oraz nip_użytkownika.db) z lokalizacji C:\Users\XXXX\AKMF, (gdzie XXXX to nazwa użytkownika aktualnie zalogowanego do komputera i pracującego w aplikacji). W przypadku natomiast zmiany katalogu roboczego na inny (na ekranie USTAWIENIA), do którego są zapisywane pozostałe wytworzone przez aplikację dokumenty, między innymi informacje JPK_VAT, JPK_FA należy również skopiować ten folder w celu uzyskania kopii zapasowej w tym zakresie.Aplikacja umożliwia tworzenie kopii bezpieczeństwa oraz odtwarzania danych z zapisanej kopii bezpieczeństwa, służą do tego dwa przyciski umieszczone na ekranie Ustawienia: wykonaj kopię zapasową oraz wczytaj kopię zapasową.Użytkownik może również wykonać „ręczny backup” poprzez kopię plików baz danych. W tym celu należy skopiować pliki baz danych (profiles.db oraz nip_użytkownika.db) z lokalizacji "
         },
         {
-            ask: "Czy i w jaki sposób mogę zrobić w aplikacji e-mikrofirma kopię zapasową danych (backup)?",
-            answear: "Aplikacja umożliwia tworzenie kopii bezpieczeństwa oraz odtwarzania danych z zapisanej kopii bezpieczeństwa, służą do tego dwa przyciski umieszczone na ekranie Ustawienia: wykonaj kopię zapasową oraz wczytaj kopię zapasową.Użytkownik może również wykonać „ręczny backup” poprzez kopię plików baz danych. W tym celu należy skopiować pliki baz danych (profiles.db oraz nip_użytkownika.db) z lokalizacji C:\Users\XXXX\AKMF, (gdzie XXXX to nazwa użytkownika aktualnie zalogowanego do komputera i pracującego w aplikacji). W przypadku natomiast zmiany katalogu roboczego na inny (na ekranie USTAWIENIA), do którego są zapisywane pozostałe wytworzone przez aplikację dokumenty, między innymi informacje JPK_VAT, JPK_FA należy również skopiować ten folder w celu uzyskania kopii zapasowej w tym zakresie."
+            id: "4-prowadze-dzialanosc-jestem-a-emeryturze-co-mam-zrobic",
+            ask: "Prowadzę jednoosbową działanosći i jestem na emeryturze?",
+            answear: `W takiej sytuacji musisz złożyć dwa dokumenty ZUS DRA.
+            Pierwszy z nich powinieneś sporządzić dla zakresu 1-39 z kodem tytułu ubezpieczenia, który obowiązywał Cię przed uzyskaniem prawa do świadczenia, np. 0510 0 0. W dokumencie wykazujesz pełne składki i podstawy wymiaru a w bloku XI wypełnij pola właściwe dla przyjętej przez Ciebie formy opodatkowania, wpisując kwoty podstawy wymiaru składki oraz składki za pełny miesiąc.
+            Drugi dokument powinieneś sporządzić dla zakresu 40-49 z kodem tytułu ubezpieczenia, który obowiązuje Cię od momentu uzyskania prawa do świadczenia, np. 0510 1 0. W dokumencie tym wykazujesz zerowe podstawy i składki na wszystkie ubezpieczenia i fundusze. Nie wypełniaj pól w bloku XI.`
         },
         {
-            ask: "Czy i w jaki sposób mogę zrobić w aplikacji e-mikrofirma kopię zapasową danych (backup)?",
-            answear: "Aplikacja umożliwia tworzenie kopii bezpieczeństwa oraz odtwarzania danych z zapisanej kopii bezpieczeństwa, służą do tego dwa przyciski umieszczone na ekranie Ustawienia: wykonaj kopię zapasową oraz wczytaj kopię zapasową.Użytkownik może również wykonać „ręczny backup” poprzez kopię plików baz danych. W tym celu należy skopiować pliki baz danych (profiles.db oraz nip_użytkownika.db) z lokalizacji C:\Users\XXXX\AKMF, (gdzie XXXX to nazwa użytkownika aktualnie zalogowanego do komputera i pracującego w aplikacji). W przypadku natomiast zmiany katalogu roboczego na inny (na ekranie USTAWIENIA), do którego są zapisywane pozostałe wytworzone przez aplikację dokumenty, między innymi informacje JPK_VAT, JPK_FA należy również skopiować ten folder w celu uzyskania kopii zapasowej w tym zakresie."
-        },
-        {
+            id: "5",
             ask: "Czy i w jaki sposób mogę zrobić w aplikacji e-mikrofirma kopię zapasową danych (backup)?",
             answear: "Aplikacja umożliwia tworzenie kopii bezpieczeństwa oraz odtwarzania danych z zapisanej kopii bezpieczeństwa, służą do tego dwa przyciski umieszczone na ekranie Ustawienia: wykonaj kopię zapasową oraz wczytaj kopię zapasową.Użytkownik może również wykonać „ręczny backup” poprzez kopię plików baz danych. W tym celu należy skopiować pliki baz danych (profiles.db oraz nip_użytkownika.db) z lokalizacji C:\Users\XXXX\AKMF, (gdzie XXXX to nazwa użytkownika aktualnie zalogowanego do komputera i pracującego w aplikacji). W przypadku natomiast zmiany katalogu roboczego na inny (na ekranie USTAWIENIA), do którego są zapisywane pozostałe wytworzone przez aplikację dokumenty, między innymi informacje JPK_VAT, JPK_FA należy również skopiować ten folder w celu uzyskania kopii zapasowej w tym zakresie."
         }
+
     ];
     var FOOTER__LINK__BOX =
     [

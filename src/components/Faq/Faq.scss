@@ -1,11 +1,19 @@
 .faq {
     background-color: #f0f8ff;
+    a {
+        text-decoration: none;
+        color: #7288a2;
+    }
+    a:hover {
+        color: #03b5d2;
+    }
 }
 
 .faq .container {
     margin: 0 auto;
     padding: 4rem;
     width: 48rem;
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -20,6 +28,7 @@
         button[aria-expanded='true'] {
             border-bottom: 1px solid #03b5d2;
         }
+        margin: 70px;
     }
     button {
         position: relative;

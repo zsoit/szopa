@@ -9,6 +9,7 @@ nav {
     font-family: 'Ubuntu', sans-serif;
     &.sticky {
         background: #4070f4;
+        box-shadow: 0 8px 17px -6px gray;
         padding: 13px 0;
     }
     .navbar {
