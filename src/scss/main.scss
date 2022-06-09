@@ -138,10 +138,37 @@ section .button {
 .end {
     height: 30vh;
     width: 100%;
-    background: url("../images/end.jpg") no-repeat;
+    background: url("../images/program__background.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end img {
+    position: relative;
+    max-width: 70vh;
+    text-align: center;
+    font-size: 50px;
+    margin: 25px;
+    padding: 20px;
+}
+
+@media (max-width: 900px) {
+    .end img {
+        max-width: 40vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .end img {
+        max-width: 50vh;
+    }
 }
 
 .end-header {
