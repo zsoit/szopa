@@ -1,5 +1,26 @@
 /* My Services CSS */
 
+.program__background__02 {
+    background-image: url('../images/program__background02.jpg');
+    // background-color: red;
+    // height: 400px;
+    .end-header {
+        color: gold;
+        margin: 0;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    img {
+        object-fit: cover;
+        border-radius: 12px;
+        width: 400px;
+        margin-bottom: 100px;
+    }
+}
+
 .services .boxes {
     display: flex;
     flex-wrap: wrap;

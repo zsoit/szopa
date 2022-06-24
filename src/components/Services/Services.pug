@@ -1,14 +1,27 @@
 .content
   .title
     span Program
+
+
+
+
   .boxes
+    .center
+      //- p= PROGRAM__desc
+      //- Img(src="./images/pakula-02.png" width="100px")
+      div
+        //- Img(src="./images/white.png" width="100px")
     .text.info
       .left.info__item
-        p= PROGRAM__desc
+        //- p= PROGRAM__desc
+        //- img(src="./images/pakula-02.png")
+
+
+
         br
       .right.info__item
         //- img(src="https://d-art.ppstatic.pl/kadry/k/r/1/49/cf/6266faf4118f4_o_large.jpg")
-        img(src="./images/pakula-02.png")
+        //- img(src="./images/pakula-02.png")
 
 
   .topic= PROGRAM__header
@@ -18,5 +31,6 @@
         .icon
           i(class="fas fa-chart-line")
         .topic= item.header
+
 
 
