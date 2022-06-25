@@ -19,23 +19,26 @@ html(lang='pl-PL')
       section#doswiadczenie.skills
         include components/Skills/Skills.pug
 
-    .program__background.program__background__02
-      .end-header GŁOSUJ 3 LIPCA!
-      //- .end-p TY DECYDUJESZ  WYBIERASZ MĄDRZE
-      .end-p Ty decydujesz
-      .end-p Wybierasz mądrze
-      br
-      .end-p
-        img(src="./images/signature-white.png" width="200px")
-
     block SERVICES
-      section#program.services
+      .program__background.program__background__02
+          .end-header GŁOSUJ 3 LIPCA
+          //- .end-p TY DECYDUJESZ  WYBIERASZ MĄDRZE
+          .end-p TY DECYDUJESZ, WYBIERASZ MĄDRZE
+          br
+          .end-p
+            img(src="./images/signature-white.png" width="200px")
+
+    section#zalozenia-programowe.services
         include components/Services/Services.pug
         section
-        .program__background
-            .end-header Program Wyborczy
-            .end-p= PROGRAM_DESC
+        //- .program__background
+        //-     .end-header Założenia programowe
+        //-     .end-p= PROGRAM_DESC
         include components/Services/ServicesItem.pug
+
+
+
+
     //- block ALERT
     //-     section#end
     //-       .end

@@ -2,10 +2,13 @@ div#article
     each item in PROGRAM_ARTICLE
         .article
             .article__inner
-                h2.article__header= item.header
+                h2.article__header !{item.header}
                 article__paragraph
-                    p= item.paragraph
+                    p !{item.paragraph}
                 ul
                     each inner in item.list
-                        li= inner.li
-    p.article__footer=  PROGRAM_ARTICLE_FOOTER
+                        li !{inner.li}
+    //- p.article__footer=  PROGRAM_ARTICLE_FOOTER
+
+
+
